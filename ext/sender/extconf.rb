@@ -3,14 +3,14 @@
 require 'mkmfmf'
 require 'core-source'
 
-target  = "sender"
+target  = "sender/sender"
   
 required_core_headers    = [	"vm_core.h",
                               "iseq.h",
                               "eval_intern.h",
                               "version.h" ]
 
-default_cflags  = "-march=x86-64 -gfull -fcatch-undefined-behavior -fno-common -fsigned-char -pipe"
+default_cflags  = "-gfull -fno-common -fsigned-char -pipe"
 
 # Create our makefile from sources
 if ensure_core_headers( required_core_headers )

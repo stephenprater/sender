@@ -1,6 +1,5 @@
-
 require 'rake-make'
 
-task :default
+task :default do
   Rake::Make( 'sender' )
 end
