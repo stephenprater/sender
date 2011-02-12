@@ -10,7 +10,7 @@ required_core_headers    = [	"vm_core.h",
                               "eval_intern.h",
                               "version.h" ]
 
-default_cflags  = "-gfull -fno-common -fsigned-char -pipe"
+default_cflags  = "-g -fno-common -fsigned-char -pipe"
 
 # Create our makefile from sources
 if ensure_core_headers( required_core_headers )
